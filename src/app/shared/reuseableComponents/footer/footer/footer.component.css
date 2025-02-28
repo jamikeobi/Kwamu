@@ -1,0 +1,11 @@
+.contact i{
+    color: #254C7F;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.contact a{
+    position: relative;
+    top: -3px;
+    font-size: 15px;
+}

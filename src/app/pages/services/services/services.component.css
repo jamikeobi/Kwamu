@@ -1,0 +1,153 @@
+/* 
+.fixed-pagination {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .fixed-pagination .custom-pagination {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .fixed-pagination .custom-pagination .ngx-pagination li a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #007bff;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .fixed-pagination .custom-pagination .ngx-pagination li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .fixed-pagination .custom-pagination .ngx-pagination .active a {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .fixed-pagination .custom-pagination .ngx-pagination .disabled a {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem; 
+    margin-top: 1rem;
+  }
+  
+  .custom-pagination .ngx-pagination {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .custom-pagination .ngx-pagination li {
+    margin: 0 5px;
+  }
+  
+  .custom-pagination .ngx-pagination li a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #007bff;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-pagination .ngx-pagination li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .custom-pagination .ngx-pagination .active a {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .custom-pagination .ngx-pagination .disabled a {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+   */
+
+   .row {
+    position: relative; /* Make this the reference for positioning */
+    padding-bottom: 100px; /* Add some space to prevent content from overlapping the pagination */
+  }
+  
+  .fixed-pagination {
+    position: absolute;
+    bottom: 0; /* Stick to the bottom of the .row container */
+    left: 0;
+    width: 100%; /* Span the entire row */
+    display: flex;
+    justify-content: center; /* Center the pagination buttons horizontally */
+    padding: 10px 0;
+    background-color: transparent; /* Optional: Add background to separate pagination from content */
+    /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  */
+    z-index: 10; /* Ensure it's above other elements in .row */
+  }
+  
+  .fixed-pagination .custom-pagination {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .fixed-pagination .custom-pagination .ngx-pagination li a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #254C7F;
+    background-color: #254C7F;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .fixed-pagination .custom-pagination .ngx-pagination li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .fixed-pagination .custom-pagination .ngx-pagination .active a {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .fixed-pagination .custom-pagination .ngx-pagination .disabled a {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+

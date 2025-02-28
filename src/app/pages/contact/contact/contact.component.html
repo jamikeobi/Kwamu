@@ -1,0 +1,140 @@
+  <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area bg-cover shadow dark text-center text-light" style="background-image: url(../../../../assets/img/banner/banner3.jpg);">
+        <!-- <div class="breadcrum-shape">
+            <img src="../../../../assets/img/shape/50.png" alt="Image Not Found">
+        </div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h1>Contact Us</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="/home"><i class="fas fa-home"></i> Home</a></li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+
+
+
+
+
+<div style="margin: 8px auto; display: block; text-align:center;">
+
+    <!---728x90--->
+
+     
+    </div>
+<div class="map-iframe">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.884539970666!2d3.309214589498502!3d6.520619764574271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ef2cb1f31e3%3A0x768c4d1c202fbe5e!2sAdenekan%20Mega%20Plaza!5e1!3m2!1sen!2sng!4v1733778164897!5m2!1sen!2sng" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<!-- /contacts -->
+<!-- contact-form 2 -->
+<section class="w3l-contact-2 py-5" id="contact">
+    <div class="container py-lg-4 py-md-3 py-2">
+        <div class="title-content text-center">
+            <h6 class="title-subw3hny mb-1">Get in touch</h6>
+            <h3 class="title-w3l mb-5">Contact Us For More Enquiry</h3>
+        </div>
+
+        <div class="contact-grids d-grid mt-5 pt-lg-3">
+            <div class="contact-left">
+                <div class="cont-details">
+                    <div class="cont-top margin-up wow fadeInLeft">
+                        <div class="cont-left text-center">
+                            <span class="fas fa-map-marker-alt"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>Our head office address:</h6>
+                            <p style="color: black;">Adenekan Plaza
+                                4th Floor Wing D
+                                No. 1 Adenekan Street, Off Okota Road
+                                Opp. Access Bank Okota, Isolo, Lagos, Nigeria.</p>
+                        </div>
+                    </div>
+                    <div class="cont-top margin-up wow fadeInLeft">
+                        <div class="cont-left text-center">
+                            <span class="fas fa-phone-alt"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>Call for help :</h6>
+                            <p><a href="tel:+(234)9033994787">+(234) 903 399 4787</a></p>
+                        </div>
+                    </div>
+                    <div class="cont-top margin-up  wow fadeInLeft">
+                        <div class="cont-left text-center">
+                            <span class="far fa-envelope"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>
+                                Mail us:</h6>
+                            <p><a href="mailto:info@kwamuandco.com" class="mail"><span class="__cf_email__" data-cfemail="c5b6b0b5b5aab7b185a8a4aca9eba6aaa8">info&#64;kwamuandco.com</span></a></p>
+                            <!-- <p><a href="https://p.w3layouts.com/cdn-cgi/l/email-protection#01626e6f75606275416c60686d2f626e6c" class="mail"><span class="__cf_email__" data-cfemail="b9dad6d7cdd8dacdf9d4d8d0d597dad6d4">[email&#160;protected]</span></a></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div *ngIf="isFormValid" class="success" style="color: rgb(16, 244, 16);">
+                    Your form has been successfully submitted!
+                  </div>
+                <form [formGroup]="contactForm" (ngSubmit)="onFormSubmit()">
+                  <div class="input-grids">
+                    <input
+                      type="text"
+                      class="contact-input"
+                      formControlName="fullName"
+                      placeholder="Your Full Name"
+                    />
+                    <div *ngIf="contactForm.get('fullName')?.invalid && contactForm.get('fullName')?.touched" class="error">
+                      Full Name is required.
+                    </div>
+              
+                    <input
+                      type="email"
+                      class="contact-input"
+                      formControlName="email"
+                      placeholder="Your Email"
+                    />
+                    <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error">
+                      Valid Email is required.
+                    </div>
+              
+                    <input
+                      type="text"
+                      class="contact-input"
+                      formControlName="subject"
+                      placeholder="Subject"
+                    />
+                    <div *ngIf="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched" class="error">
+                      Subject is required.
+                    </div>
+                  </div>
+                  <div class="form-input">
+                    <textarea
+                      class="contact-input"
+                      formControlName="message"
+                      placeholder="Type your message here"
+                    ></textarea>
+                  </div>
+                  <div class="submit-w3l-button text-lg-right">
+                    <button [disabled]="contactForm.invalid" class="btn btn-style btn-primary" type="submit">
+                      {{ contactForm.valid ? 'Send Form' : 'Complete Form' }}
+                    </button>
+                  </div>
+                </form>
+              </div>
+              
+        </div>
+    </div>
+</section>
+<!-- /contact-form-2 -->
+<div style="margin: 8px auto; display: block; text-align:center;">
+
+    <!---728x90--->
+     
+    </div>
+<!-- //contacts -->

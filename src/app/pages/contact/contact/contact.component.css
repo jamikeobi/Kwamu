@@ -1,0 +1,47 @@
+.error{
+    padding: 10px;
+    color: red;
+}
+.btn{
+    background-color: #254C7F !important;
+}
+
+/* Notification Div on top of the form */
+.notification-div {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Space between the notification and the form */
+    width: 100%; /* Make it stretch to full width */
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    top: -50px; /* Position it slightly above the form */
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure it's on top of other elements */
+    animation: fade-in 0.5s ease-in-out, fade-out 3s ease-in-out 3s; /* Fade-in and fade-out effect */
+  }
+  
+  /* Fade-in animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-out animation */
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

@@ -1,0 +1,75 @@
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.sub-title{
+    transition: .5s all ease-in-out;
+}
+.sub-title:hover{
+    color: #254C7F !important;
+    transform: scale(1.07);
+}
+/* .w3l-blog{
+    background-color: #3d85e2;
+}
+
+.bloghome{
+    background-color: #3d85e2;
+} */
+/* Span Styling */
+
+.tag-container {
+    margin: 70px 0; /* Adjust margin for spacing */
+}
+
+.same-style {
+    display: flex; /* Makes each span align horizontally */
+    justify-content: space-between; /* Adds space between text and icon */
+    align-items: center; /* Center the icon vertically with text */
+    padding: 10px 0; /* Adds vertical padding */
+    font-size: 16px; /* Optional: Set font size */
+    color: #333; /* Optional: Set text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.same-style a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+.same-style a:hover{
+    color: #10A869;
+}
+.same-style i {
+    margin-left: 5px; /* Adds space between the text and the icon */
+}
+
+/* Style for uniform lengths */
+
+.w3l-blogpost-content {
+    display: flex; /* Use flexbox for the row */
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.item {
+    display: flex; /* Make item a flex container */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.card {
+    flex: 1; /* Allow cards to grow equally */
+    display: flex; /* Make card a flex container */
+    flex-direction: column; /* Stack contents vertically */
+    height: 100%; /* Ensure card takes full height */
+}
+
+.card-body {
+    flex-grow: 1; /* Allow the body to expand and fill the card */
+}
+
+
+
+img{
+    width: 310px;
+    height: 250px;
+}
