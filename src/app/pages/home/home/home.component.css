@@ -6,3 +6,11 @@
 .info{
     height: 300px;
 }
+
+
+#testimonial-heading {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px; /* Adjust this value as needed */
+}
